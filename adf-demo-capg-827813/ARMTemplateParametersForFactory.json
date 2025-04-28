@@ -11,6 +11,12 @@
 		"BlobStorageProduct_connectionString": {
 			"value": ""
 		},
+		"AdvCustomerDb_password": {
+			"value": ""
+		},
+		"BlobStorageCustomer_connectionString": {
+			"value": ""
+		},
 		"AdvWorksDb_properties_typeProperties_server": {
 			"value": "sqlserver8.database.windows.net"
 		},
@@ -18,6 +24,15 @@
 			"value": "sql-db-82"
 		},
 		"AdvWorksDb_properties_typeProperties_userName": {
+			"value": "Hardikgaur"
+		},
+		"AdvCustomerDb_properties_typeProperties_server": {
+			"value": "sqlserver8.database.windows.net"
+		},
+		"AdvCustomerDb_properties_typeProperties_database": {
+			"value": "sql-db-82"
+		},
+		"AdvCustomerDb_properties_typeProperties_userName": {
 			"value": "Hardikgaur"
 		}
 	}
