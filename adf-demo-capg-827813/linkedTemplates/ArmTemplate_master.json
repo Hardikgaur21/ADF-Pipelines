@@ -7,33 +7,21 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-demo-capg-827813"
 		},
-		"AdvWorksDb_password": {
-			"type": "secureString",
-			"metadata": "Secure string for 'password' of 'AdvWorksDb'"
-		},
-		"BlobStorageProduct_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'BlobStorageProduct'"
-		},
 		"AdvCustomerDb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AdvCustomerDb'"
+		},
+		"AdvWorksDb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'AdvWorksDb'"
 		},
 		"BlobStorageCustomer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'BlobStorageCustomer'"
 		},
-		"AdvWorksDb_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "sqlserver8.database.windows.net"
-		},
-		"AdvWorksDb_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "sql-db-82"
-		},
-		"AdvWorksDb_properties_typeProperties_userName": {
-			"type": "string",
-			"defaultValue": "Hardikgaur"
+		"BlobStorageProduct_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobStorageProduct'"
 		},
 		"AdvCustomerDb_properties_typeProperties_server": {
 			"type": "string",
@@ -44,6 +32,18 @@
 			"defaultValue": "sql-db-82"
 		},
 		"AdvCustomerDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Hardikgaur"
+		},
+		"AdvWorksDb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sqlserver8.database.windows.net"
+		},
+		"AdvWorksDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sql-db-82"
+		},
+		"AdvWorksDb_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Hardikgaur"
 		},
@@ -74,26 +74,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AdvWorksDb_password": {
-						"value": "[parameters('AdvWorksDb_password')]"
-					},
-					"BlobStorageProduct_connectionString": {
-						"value": "[parameters('BlobStorageProduct_connectionString')]"
-					},
 					"AdvCustomerDb_password": {
 						"value": "[parameters('AdvCustomerDb_password')]"
+					},
+					"AdvWorksDb_password": {
+						"value": "[parameters('AdvWorksDb_password')]"
 					},
 					"BlobStorageCustomer_connectionString": {
 						"value": "[parameters('BlobStorageCustomer_connectionString')]"
 					},
-					"AdvWorksDb_properties_typeProperties_server": {
-						"value": "[parameters('AdvWorksDb_properties_typeProperties_server')]"
-					},
-					"AdvWorksDb_properties_typeProperties_database": {
-						"value": "[parameters('AdvWorksDb_properties_typeProperties_database')]"
-					},
-					"AdvWorksDb_properties_typeProperties_userName": {
-						"value": "[parameters('AdvWorksDb_properties_typeProperties_userName')]"
+					"BlobStorageProduct_connectionString": {
+						"value": "[parameters('BlobStorageProduct_connectionString')]"
 					},
 					"AdvCustomerDb_properties_typeProperties_server": {
 						"value": "[parameters('AdvCustomerDb_properties_typeProperties_server')]"
@@ -103,6 +94,15 @@
 					},
 					"AdvCustomerDb_properties_typeProperties_userName": {
 						"value": "[parameters('AdvCustomerDb_properties_typeProperties_userName')]"
+					},
+					"AdvWorksDb_properties_typeProperties_server": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_server')]"
+					},
+					"AdvWorksDb_properties_typeProperties_database": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_database')]"
+					},
+					"AdvWorksDb_properties_typeProperties_userName": {
+						"value": "[parameters('AdvWorksDb_properties_typeProperties_userName')]"
 					}
 				}
 			},

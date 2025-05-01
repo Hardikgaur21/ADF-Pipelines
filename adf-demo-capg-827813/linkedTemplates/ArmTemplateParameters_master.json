@@ -5,26 +5,17 @@
 		"factoryName": {
 			"value": "adf-demo-capg-827813"
 		},
-		"AdvWorksDb_password": {
-			"value": ""
-		},
-		"BlobStorageProduct_connectionString": {
-			"value": ""
-		},
 		"AdvCustomerDb_password": {
+			"value": ""
+		},
+		"AdvWorksDb_password": {
 			"value": ""
 		},
 		"BlobStorageCustomer_connectionString": {
 			"value": ""
 		},
-		"AdvWorksDb_properties_typeProperties_server": {
-			"value": "sqlserver8.database.windows.net"
-		},
-		"AdvWorksDb_properties_typeProperties_database": {
-			"value": "sql-db-82"
-		},
-		"AdvWorksDb_properties_typeProperties_userName": {
-			"value": "Hardikgaur"
+		"BlobStorageProduct_connectionString": {
+			"value": ""
 		},
 		"AdvCustomerDb_properties_typeProperties_server": {
 			"value": "sqlserver8.database.windows.net"
@@ -33,6 +24,15 @@
 			"value": "sql-db-82"
 		},
 		"AdvCustomerDb_properties_typeProperties_userName": {
+			"value": "Hardikgaur"
+		},
+		"AdvWorksDb_properties_typeProperties_server": {
+			"value": "sqlserver8.database.windows.net"
+		},
+		"AdvWorksDb_properties_typeProperties_database": {
+			"value": "sql-db-82"
+		},
+		"AdvWorksDb_properties_typeProperties_userName": {
 			"value": "Hardikgaur"
 		},
 		"containerUri": {
