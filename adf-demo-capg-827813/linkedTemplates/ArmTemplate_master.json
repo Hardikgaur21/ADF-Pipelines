@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-demo-capg-827813"
 		},
+		"ADLSGen2_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLSGen2'"
+		},
 		"AdvCustomerDb_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'AdvCustomerDb'"
@@ -27,9 +31,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ProductBlobStorage'"
 		},
-		"ADLSGen2_accountKey": {
+		"TaxiTripDb_password": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'ADLSGen2'"
+			"metadata": "Secure string for 'password' of 'TaxiTripDb'"
+		},
+		"ADLSTripData_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLSTripData'"
+		},
+		"ADLSGen2_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://storage8278.dfs.core.windows.net/"
 		},
 		"AdvCustomerDb_properties_typeProperties_server": {
 			"type": "string",
@@ -55,9 +67,21 @@
 			"type": "string",
 			"defaultValue": "Hardikgaur"
 		},
-		"ADLSGen2_properties_typeProperties_url": {
+		"TaxiTripDb_properties_typeProperties_server": {
 			"type": "string",
-			"defaultValue": "https://storage8278.dfs.core.windows.net/"
+			"defaultValue": "sqlserver8.database.windows.net"
+		},
+		"TaxiTripDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "taxi-data"
+		},
+		"TaxiTripDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "Hardikgaur"
+		},
+		"ADLSTripData_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlstripdata8278.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -86,6 +110,9 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"ADLSGen2_accountKey": {
+						"value": "[parameters('ADLSGen2_accountKey')]"
+					},
 					"AdvCustomerDb_password": {
 						"value": "[parameters('AdvCustomerDb_password')]"
 					},
@@ -101,8 +128,14 @@
 					"ProductBlobStorage_connectionString": {
 						"value": "[parameters('ProductBlobStorage_connectionString')]"
 					},
-					"ADLSGen2_accountKey": {
-						"value": "[parameters('ADLSGen2_accountKey')]"
+					"TaxiTripDb_password": {
+						"value": "[parameters('TaxiTripDb_password')]"
+					},
+					"ADLSTripData_accountKey": {
+						"value": "[parameters('ADLSTripData_accountKey')]"
+					},
+					"ADLSGen2_properties_typeProperties_url": {
+						"value": "[parameters('ADLSGen2_properties_typeProperties_url')]"
 					},
 					"AdvCustomerDb_properties_typeProperties_server": {
 						"value": "[parameters('AdvCustomerDb_properties_typeProperties_server')]"
@@ -122,8 +155,17 @@
 					"AdvWorksDb_properties_typeProperties_userName": {
 						"value": "[parameters('AdvWorksDb_properties_typeProperties_userName')]"
 					},
-					"ADLSGen2_properties_typeProperties_url": {
-						"value": "[parameters('ADLSGen2_properties_typeProperties_url')]"
+					"TaxiTripDb_properties_typeProperties_server": {
+						"value": "[parameters('TaxiTripDb_properties_typeProperties_server')]"
+					},
+					"TaxiTripDb_properties_typeProperties_database": {
+						"value": "[parameters('TaxiTripDb_properties_typeProperties_database')]"
+					},
+					"TaxiTripDb_properties_typeProperties_userName": {
+						"value": "[parameters('TaxiTripDb_properties_typeProperties_userName')]"
+					},
+					"ADLSTripData_properties_typeProperties_url": {
+						"value": "[parameters('ADLSTripData_properties_typeProperties_url')]"
 					}
 				}
 			},
