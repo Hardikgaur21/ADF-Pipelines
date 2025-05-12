@@ -8,6 +8,9 @@
 		"ADLSGen2_accountKey": {
 			"value": ""
 		},
+		"ADLSTripData_accountKey": {
+			"value": ""
+		},
 		"AdvCustomerDb_password": {
 			"value": ""
 		},
@@ -20,23 +23,26 @@
 		"BlobStorageProduct_connectionString": {
 			"value": ""
 		},
+		"FlipkartBlob_connectionString": {
+			"value": ""
+		},
 		"ProductBlobStorage_connectionString": {
 			"value": ""
 		},
 		"TaxiTripDb_password": {
 			"value": ""
 		},
-		"ADLSTripData_accountKey": {
-			"value": ""
-		},
 		"TripAggregateBlob_connectionString": {
 			"value": ""
 		},
-		"FlipkartBlob_connectionString": {
+		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
 		"ADLSGen2_properties_typeProperties_url": {
 			"value": "https://storage8278.dfs.core.windows.net/"
+		},
+		"ADLSTripData_properties_typeProperties_url": {
+			"value": "https://adlstripdata8278.dfs.core.windows.net/"
 		},
 		"AdvCustomerDb_properties_typeProperties_server": {
 			"value": "sqlserver8.database.windows.net"
@@ -64,9 +70,6 @@
 		},
 		"TaxiTripDb_properties_typeProperties_userName": {
 			"value": "Hardikgaur"
-		},
-		"ADLSTripData_properties_typeProperties_url": {
-			"value": "https://adlstripdata8278.dfs.core.windows.net/"
 		}
 	}
 }
